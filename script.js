@@ -1,11 +1,15 @@
+
+// evento de clique ao botão com ID soma
 document.getElementById("soma").addEventListener("click", function aparecer() {
 
+    // tira classe hidden elemento com a classe "soma" para exibi-lo
     document.querySelector(".soma").classList.remove("hidden");
     document.querySelector(".container").classList.add("hidden");
 });
 
 document.getElementById("btn-define").addEventListener("click", function definirmatrizes(soma) {
 
+    // valores dos campos de entrada para o número de colunas e linhas das matrizes
     var colunaMatriz1 = document.getElementById("colmatriz1").value;
     var linhaMatriz1 = document.getElementById("linmatriz1").value;
     var colunaMatriz2 = document.getElementById("colmatriz2").value;
